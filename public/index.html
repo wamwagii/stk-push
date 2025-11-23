@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="bg-gray-50 min-h-screen">
     <div class="container mx-auto px-3 py-4">
         <!-- Header -->
@@ -16,12 +18,13 @@
                 Choose your duration and pay via M-Pesa
             </p>
         </div>
-        
+
         <!-- Packages Grid - Horizontal Cards -->
         <div class="space-y-3 max-w-md mx-auto">
-            
+
             <!-- 1 Hour Package -->
-            <div class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
+            <div
+                class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
                 <div class="p-4">
                     <div class="flex items-center justify-between">
                         <div class="flex-1">
@@ -30,10 +33,8 @@
                                     <h3 class="font-semibold text-gray-800 text-base">1 Hr Unlimited @</h3>
                                 </div>
                                 <span class="text-lg font-bold text-green-600">KSh 5</span>
-                                <button 
-                                    onclick="openPaymentModal('1 Hour VPN Access', 5)"
-                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200"
-                                >
+                                <button onclick="openPaymentModal('1 Hour Unlimited', 5)"
+                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200">
                                     Buy
                                 </button>
                             </div>
@@ -43,24 +44,23 @@
             </div>
 
             <!-- 3 Hours Package -->
-            <div class="bg-white rounded-lg shadow-sm border-2 border-green-100 hover:shadow-md transition-all duration-200">
+            <div
+                class="bg-white rounded-lg shadow-sm border-2 border-green-100 hover:shadow-md transition-all duration-200">
                 <div class="p-4">
                     <div class="flex items-center justify-between">
                         <div class="flex-1">
                             <div class="flex items-center justify-between mb-2">
-                                
+
                             </div>
                             <div class="flex items-center justify-between">
                                 <div>
-                                <h3 class="font-semibold text-gray-800 text-base">3 Hrs Unlimited @</h3>
+                                    <h3 class="font-semibold text-gray-800 text-base">3 Hrs Unlimited @</h3>
                                 </div>
-                                 <div>
+                                <div>
                                     <span class="text-lg font-bold text-green-600">KSh 15</span>
                                 </div>
-                                <button 
-                                    onclick="openPaymentModal('3 Hours VPN Access', 15)"
-                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200"
-                                >
+                                <button onclick="openPaymentModal('3 Hours Unlimited', 15)"
+                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200">
                                     Buy
                                 </button>
                             </div>
@@ -70,7 +70,8 @@
             </div>
 
             <!-- 12 Hours Package -->
-            <div class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
+            <div
+                class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
                 <div class="p-4">
                     <div class="flex items-center justify-between">
                         <div class="flex-1">
@@ -81,10 +82,8 @@
                                 <div>
                                     <span class="text-lg font-bold text-green-600">KSh 25</span>
                                 </div>
-                                <button 
-                                    onclick="openPaymentModal('12 Hours VPN Access', 25)"
-                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200"
-                                >
+                                <button onclick="openPaymentModal('12 Hours Unlimited', 25)"
+                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200">
                                     Buy
                                 </button>
                             </div>
@@ -94,7 +93,8 @@
             </div>
 
             <!-- 1 Month Package -->
-            <div class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
+            <div
+                class="bg-white rounded-lg shadow-sm border border-green-200 hover:shadow-md transition-all duration-200">
                 <div class="p-4">
                     <div class="flex items-center justify-between">
                         <div class="flex-1">
@@ -105,10 +105,8 @@
                                 <div>
                                     <span class="text-lg font-bold text-green-600">KSh 780</span>
                                 </div>
-                                <button 
-                                    onclick="openPaymentModal('1 Month VPN Access', 780)"
-                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200"
-                                >
+                                <button onclick="openPaymentModal('1 Month Unlimited', 780)"
+                                    class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 px-4 rounded-xl transition duration-200">
                                     Buy
                                 </button>
                             </div>
@@ -151,12 +149,9 @@
 
         <!-- Test Info Box -->
         <div class="max-w-md mx-auto mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-            <h3 class="text-sm font-semibold text-yellow-800 mb-1">
-                Testing Info
+            <h3 class="text-sm text-yellow-800 mb-1">
+                Contact Support at <a href="tel:+254717340777" class="underline">+254717340777</a>
             </h3>
-            <p class="text-yellow-700 text-xs">
-                Use test numbers: <strong>254708374149</strong>, <strong>254700000000</strong>
-            </p>
         </div>
     </div>
 
@@ -165,9 +160,10 @@
         <div class="flex items-end justify-center min-h-screen pt-4 px-3 pb-20 text-center sm:block sm:p-0">
             <!-- Background backdrop -->
             <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-            
+
             <!-- Modal panel -->
-            <div class="inline-block align-bottom bg-white rounded-t-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:rounded-lg">
+            <div
+                class="inline-block align-bottom bg-white rounded-t-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:rounded-lg">
                 <form id="paymentForm" onsubmit="processPayment(event)">
                     <div class="bg-white px-4 pt-5 pb-4 sm:p-6">
                         <div class="sm:flex sm:items-start">
@@ -175,76 +171,67 @@
                                 <!-- Header -->
                                 <div class="flex items-center justify-between mb-4">
                                     <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                        Activate VPN
+                                        Purchase Package
                                     </h3>
-                                    <button 
-                                        type="button"
-                                        onclick="closePaymentModal()"
-                                        class="text-gray-400 hover:text-gray-600 transition duration-200"
-                                    >
+                                    <button type="button" onclick="closePaymentModal()"
+                                        class="text-gray-400 hover:text-gray-600 transition duration-200">
                                         <i class="fas fa-times text-lg"></i>
                                     </button>
                                 </div>
-                                
+
                                 <div class="mt-4 space-y-4">
                                     <!-- Package Details -->
                                     <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
                                         <div class="flex items-center justify-between">
                                             <div>
-                                                <p class="font-semibold text-blue-900 text-base" id="packageName">Package Name</p>
+                                                <p class="font-semibold text-blue-900 text-base" id="packageName">
+                                                    Package Name</p>
                                             </div>
                                             <div class="text-right">
-                                                <p class="text-lg font-bold text-green-600">KSh <span id="packageAmount">0</span></p>
+                                                <p class="text-lg font-bold text-green-600">KSh <span
+                                                        id="packageAmount">0</span></p>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <!-- Phone Input -->
                                     <div class="space-y-2">
                                         <label for="phoneNumber" class="block text-sm font-medium text-gray-700">
                                             M-Pesa Phone Number
                                         </label>
-                                        <input 
-                                            type="tel" 
-                                            id="phoneNumber" 
-                                            name="phoneNumber"
-                                            placeholder="07XXXXXXXX" 
+                                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="07XXXXXXXX"
                                             required
                                             class="w-full px-3 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-base"
-                                            maxlength="12"
-                                        >
+                                            maxlength="12">
                                         <p class="text-xs text-gray-500">
                                             Enter your M-Pesa registered phone number
                                         </p>
                                     </div>
-                                    
+
                                     <!-- Payment Status -->
                                     <div id="paymentStatus" class="hidden mt-4 p-3 rounded-lg"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Footer Buttons -->
                     <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                        <button 
-                            type="submit" 
-                            id="payButton"
-                            class="w-full inline-flex justify-center items-center rounded-lg border border-transparent shadow-sm px-4 py-3 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-200 sm:ml-3 sm:w-auto sm:text-sm"
-                        >
+                        <button type="submit" id="payButton"
+                            class="w-full inline-flex justify-center items-center rounded-lg border border-transparent shadow-sm px-4 py-3 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-200 sm:ml-3 sm:w-auto sm:text-sm">
                             <span id="payButtonText">Pay Now</span>
                             <span id="payButtonSpinner" class="hidden ml-2">
                                 <svg class="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
-                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                        stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor"
+                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                    </path>
                                 </svg>
                             </span>
                         </button>
-                        <button 
-                            type="button" 
-                            onclick="closePaymentModal()"
-                            class="mt-2 w-full inline-flex justify-center items-center rounded-lg border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-                        >
+                        <button type="button" onclick="closePaymentModal()"
+                            class="mt-2 w-full inline-flex justify-center items-center rounded-lg border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                             Cancel
                         </button>
                     </div>
@@ -260,29 +247,29 @@
         // Global functions for modal
         function openPaymentModal(packageName, packageAmount) {
             console.log('Opening modal for:', packageName, packageAmount);
-            
+
             const packageData = {
                 name: packageName,
                 amount: packageAmount
             };
-            
+
             // Set the package in the payment state
             paymentState.setPackage(packageData);
-            
+
             // Update modal UI
             document.getElementById('packageName').textContent = packageName;
             document.getElementById('packageAmount').textContent = packageAmount.toLocaleString();
-            
+
             // Reset form
             document.getElementById('phoneNumber').value = '';
             const statusElement = document.getElementById('paymentStatus');
             if (statusElement) {
                 statusElement.classList.add('hidden');
             }
-            
+
             // Show modal
             document.getElementById('paymentModal').classList.remove('hidden');
-            
+
             // Focus on phone input
             setTimeout(() => {
                 document.getElementById('phoneNumber').focus();
@@ -297,13 +284,13 @@
         async function processPayment(event) {
             event.preventDefault();
             console.log('Process payment called');
-            
+
             const phoneNumber = document.getElementById('phoneNumber').value.trim();
             if (!phoneNumber) {
                 alert('Please enter your phone number');
                 return;
             }
-            
+
             // Validate phone number
             const cleaned = phoneNumber.replace(/\s+/g, '');
             const regex = /^(07|01|\+254|254)\d{8}$/;
@@ -311,24 +298,24 @@
                 alert('Please enter a valid Kenyan phone number (e.g., 07XXXXXXXX)');
                 return;
             }
-            
+
             console.log('Calling processPayment with phone:', phoneNumber);
             await paymentState.processPayment(phoneNumber);
         }
 
         // Close modal when clicking outside or pressing Escape
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const modal = document.getElementById('paymentModal');
-            
+
             if (modal) {
-                modal.addEventListener('click', function(event) {
+                modal.addEventListener('click', function (event) {
                     if (event.target === modal) {
                         closePaymentModal();
                     }
                 });
             }
-            
-            document.addEventListener('keydown', function(event) {
+
+            document.addEventListener('keydown', function (event) {
                 if (event.key === 'Escape') {
                     const modal = document.getElementById('paymentModal');
                     if (modal && !modal.classList.contains('hidden')) {
@@ -339,4 +326,5 @@
         });
     </script>
 </body>
+
 </html>
